@@ -50,6 +50,15 @@ html::-webkit-scrollbar-thumb{
 
  }
 
+ .heading-title{
+     text-align: center;
+     margin-bottom: 3rem;
+     font-size: 6rem;
+     text-transform: uppercase;
+     color: var(--black);
+
+ }
+
  /* Home page start */
 
 .header{
@@ -82,6 +91,41 @@ html::-webkit-scrollbar-thumb{
     color: var(--black);
     cursor: pointer;
     display: none;
+
+}
+
+
+/* service */
+
+
+.service .box-container{
+
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 1rem;
+
+}
+
+.service .box-container .box{
+    padding: 3rem 2rem;
+    text-align: center;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+.service .box-container .box:hover{
+    background: var(--black);
+
+}
+
+.service .box-container .box img{
+    height: 7rem;
+}
+.service .box-container .box h3{
+    color: var(--white);
+    font-size: 1.7rem;
+    padding-top:1rem ;
 
 }
  
@@ -135,3 +179,6 @@ html::-webkit-scrollbar-thumb{
 
 
 }
+
+
+ 
