@@ -49,14 +49,22 @@ html::-webkit-scrollbar-thumb{
      padding: 5rem 10%;
 
  }
- .btn{
-
-    margin-top: 1rem;
-    display: inline-block;
-    background: var(--black) ;
-    
+ @keyframes fadeIn {
+     0%{
+         transform: scale(0);
+         opacity: 0;
+     }
+     
  }
-
+ .btn{
+    display: inline-block;
+    background: var(--black);
+    margin-top: 1rem;
+    color:var(--white);
+    font-size: 1.7rem;
+    padding:1rem 3rem;
+    cursor: pointer;
+ }
  .heading-title{
      text-align: center;
      margin-bottom: 3rem;
@@ -117,13 +125,18 @@ html::-webkit-scrollbar-thumb{
 
 .home .slide .content{
     width: 85rem;
+     display: none;
      
+}
+.home .swiper-slide-active .content{
+    display: inline-block;
 }
 .home .slide .content span{
   display: block;
   font-size: 2.5rem;
   color: var(--light-white);
   padding-bottom: 1rem;
+  animation: fadeIn .4s linear backwards .2s;
 }
 
 .home .slide .content h3{
@@ -133,6 +146,15 @@ html::-webkit-scrollbar-thumb{
     line-height: 1;
     text-shadow: var(--text-showdow);
     padding: 1rem 0;
+    animation: fadeIn .4s linear backwards .4s;
+
+}
+
+.btn:hover{
+    background-color: var(--main-color) ;
+}
+.home .slide .content .btn{
+    animation: fadeIn .4s linear backwards .6s;
 
 }
 
